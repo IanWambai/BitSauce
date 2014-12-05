@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF610C"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tvExchangeRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/exchange_rate_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="1 Bitcoin = 00000 Kenya Shillings"
+            android:textColor="#D86500"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCashToConvert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_selector"
+            android:hint="Amount of cash"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etBitcoinAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_selector"
+            android:hint="Your BitCoin address"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfBitcoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Number of Bitcoins: ..."
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTransactionFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Transaction fee (15%): ..."
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvAmountToSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Total amount to send: ..."
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bProcess"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Process"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bBuyBitcoins"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Buy Bitcoins"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
